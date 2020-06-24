@@ -14,6 +14,12 @@ public class CattleDTO {
     private String currentStatus;
     private String purchaseDate;
     private String SoldDate;
+    private boolean IsMilkProducingCattle;
+    private boolean IsPregnantCattle;
+    private String laganDate;
+    private String ExpectedDeliveryDate;
+    private String gender;
+    private int vet;
 
 
 	public int getId() {
@@ -110,6 +116,54 @@ public class CattleDTO {
 
 	public void setSoldDate(String soldDate) {
 		SoldDate = soldDate;
+	}
+
+	public boolean isIsMilkProducingCattle() {
+		return IsMilkProducingCattle;
+	}
+
+	public void setIsMilkProducingCattle(boolean isMilkProducingCattle) {
+		IsMilkProducingCattle = isMilkProducingCattle;
+	}
+
+	public boolean isIsPregnantCattle() {
+		return IsPregnantCattle;
+	}
+
+	public void setIsPregnantCattle(boolean isPregnantCattle) {
+		IsPregnantCattle = isPregnantCattle;
+	}
+
+	public String getLaganDate() {
+		return laganDate;
+	}
+
+	public void setLaganDate(String laganDate) {
+		this.laganDate = laganDate;
+	}
+
+	public String getExpectedDeliveryDate() {
+		return ExpectedDeliveryDate;
+	}
+
+	public void setExpectedDeliveryDate(String expectedDeliveryDate) {
+		ExpectedDeliveryDate = expectedDeliveryDate;
+	}
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+	public int getVet() {
+		return vet;
+	}
+
+	public void setVet(int vet) {
+		this.vet = vet;
 	}
 	
 	

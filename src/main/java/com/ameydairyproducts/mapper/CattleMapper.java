@@ -23,6 +23,12 @@ public class CattleMapper {
 			cattle.setCurrentStatus(dto.getCurrentStatus());
 			cattle.setPurchaseDate(dto.getPurchaseDate());
 			cattle.setSoldDate(dto.getSoldDate());
+			cattle.setIsMilkProducingCattle(dto.isIsMilkProducingCattle());
+			cattle.setIsPregnantCattle(dto.isIsPregnantCattle());
+			cattle.setLaganDate(dto.getLaganDate());
+			cattle.setExpectedDeliveryDate(dto.getExpectedDeliveryDate());
+			cattle.setGender(dto.getGender());
+			cattle.setVet(dto.getVet());
 		}
 
 		return cattle;
@@ -43,6 +49,13 @@ public class CattleMapper {
 			cattleDTO.setSellingPrice(cattle.getSellingPrice());
 			cattleDTO.setPurchaseDate(cattle.getPurchaseDate());
 			cattleDTO.setSoldDate(cattle.getSoldDate());
+			cattleDTO.setIsMilkProducingCattle(cattle.isIsMilkProducingCattle());
+			cattleDTO.setIsPregnantCattle(cattle.isIsPregnantCattle());
+			cattleDTO.setLaganDate(cattle.getLaganDate());
+			cattleDTO.setExpectedDeliveryDate(cattle.getExpectedDeliveryDate());
+			cattleDTO.setGender(cattle.getGender());
+			cattleDTO.setVet(cattle.getVet());
+			
 		}
 
 		return cattleDTO;

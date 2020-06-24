@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.ameydairyproducts.domain.CattelDataResponse;
 import com.ameydairyproducts.domain.Cattle;
 import com.ameydairyproducts.dto.CattleDTO;
 import com.ameydairyproducts.mapper.CattleMapper;
@@ -54,4 +55,12 @@ public class CattleController {
     public void deleteCattle(@PathVariable("id") int cattleId) {
         cattleService.deleteCattle(cattleId);
     }
+    
+    
+
+    @GetMapping("/cattles/data")
+    public CattelDataResponse getCattlesData() {
+        return null;
+    }
+
 }

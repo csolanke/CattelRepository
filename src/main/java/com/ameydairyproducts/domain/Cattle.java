@@ -21,13 +21,25 @@ public class Cattle {
     private String currentStatus;
     private String purchaseDate;
     private String SoldDate;
+    private boolean IsMilkProducingCattle;
+    private boolean IsPregnantCattle;
+    private String laganDate;
+    private String ExpectedDeliveryDate;
+    private String gender;
+    private int vet;
+    
 
 
     public Cattle() {
     }
 
     public Cattle(int id, String cattleName, String marketPurchased, String breed, double pricePurchased, int numOfKids, String uniqueIdentity, double milkingCapacity,
-    		double sellingPrice,String currentStatus,String purchaseDate,String soldDate) {
+    		double sellingPrice,String currentStatus,String purchaseDate,String soldDate,
+    		boolean IsPregnantCattle,
+              String laganDate,
+              String ExpectedDeliveryDate,
+               String gender,
+               int vet) {
         this.id = id;
         this.cattleName = cattleName;
         this.marketPurchased = marketPurchased;
@@ -40,6 +52,11 @@ public class Cattle {
         this.currentStatus=currentStatus;
         this.purchaseDate=purchaseDate;
         this.SoldDate=soldDate;
+        this.IsPregnantCattle=IsPregnantCattle;
+        this.laganDate=laganDate;
+        this.ExpectedDeliveryDate=ExpectedDeliveryDate;
+        this.vet=vet;
+        
     }
 
 	public int getId() {
@@ -136,6 +153,54 @@ public class Cattle {
 
 	public void setSoldDate(String soldDate) {
 		SoldDate = soldDate;
+	}
+
+	public boolean isIsMilkProducingCattle() {
+		return IsMilkProducingCattle;
+	}
+
+	public void setIsMilkProducingCattle(boolean isMilkProducingCattle) {
+		IsMilkProducingCattle = isMilkProducingCattle;
+	}
+
+	public boolean isIsPregnantCattle() {
+		return IsPregnantCattle;
+	}
+
+	public void setIsPregnantCattle(boolean isPregnantCattle) {
+		IsPregnantCattle = isPregnantCattle;
+	}
+
+	public String getLaganDate() {
+		return laganDate;
+	}
+
+	public void setLaganDate(String laganDate) {
+		this.laganDate = laganDate;
+	}
+
+	public String getExpectedDeliveryDate() {
+		return ExpectedDeliveryDate;
+	}
+
+	public void setExpectedDeliveryDate(String expectedDeliveryDate) {
+		ExpectedDeliveryDate = expectedDeliveryDate;
+	}
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+	public int getVet() {
+		return vet;
+	}
+
+	public void setVet(int vet) {
+		this.vet = vet;
 	}
     
     
