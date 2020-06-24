@@ -12,6 +12,8 @@ public class CattleDTO {
 	private double milkingCapacity;
 	private double sellingPrice;
     private String currentStatus;
+    private String purchaseDate;
+    private String SoldDate;
 
 
 	public int getId() {
@@ -92,6 +94,22 @@ public class CattleDTO {
 
 	public void setCurrentStatus(String currentStatus) {
 		this.currentStatus = currentStatus;
+	}
+
+	public String getPurchaseDate() {
+		return purchaseDate;
+	}
+
+	public void setPurchaseDate(String purchaseDate) {
+		this.purchaseDate = purchaseDate;
+	}
+
+	public String getSoldDate() {
+		return SoldDate;
+	}
+
+	public void setSoldDate(String soldDate) {
+		SoldDate = soldDate;
 	}
 	
 	

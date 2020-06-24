@@ -21,6 +21,8 @@ public class CattleMapper {
 			cattle.setUniqueIdentity(dto.getUniqueIdentity());
 			cattle.setSellingPrice(dto.getSellingPrice());
 			cattle.setCurrentStatus(dto.getCurrentStatus());
+			cattle.setPurchaseDate(dto.getPurchaseDate());
+			cattle.setSoldDate(dto.getSoldDate());
 		}
 
 		return cattle;
@@ -39,6 +41,8 @@ public class CattleMapper {
 			cattleDTO.setUniqueIdentity(cattle.getUniqueIdentity());
 			cattleDTO.setCurrentStatus(cattle.getCurrentStatus());
 			cattleDTO.setSellingPrice(cattle.getSellingPrice());
+			cattleDTO.setPurchaseDate(cattle.getPurchaseDate());
+			cattleDTO.setSoldDate(cattle.getSoldDate());
 		}
 
 		return cattleDTO;

@@ -19,13 +19,15 @@ public class Cattle {
     private double milkingCapacity;
     private double sellingPrice;
     private String currentStatus;
+    private String purchaseDate;
+    private String SoldDate;
 
 
     public Cattle() {
     }
 
     public Cattle(int id, String cattleName, String marketPurchased, String breed, double pricePurchased, int numOfKids, String uniqueIdentity, double milkingCapacity,
-    		double sellingPrice,String currentStatus) {
+    		double sellingPrice,String currentStatus,String purchaseDate,String soldDate) {
         this.id = id;
         this.cattleName = cattleName;
         this.marketPurchased = marketPurchased;
@@ -36,6 +38,8 @@ public class Cattle {
         this.milkingCapacity = milkingCapacity;
         this.sellingPrice=sellingPrice;
         this.currentStatus=currentStatus;
+        this.purchaseDate=purchaseDate;
+        this.SoldDate=soldDate;
     }
 
 	public int getId() {
@@ -116,6 +120,22 @@ public class Cattle {
 
 	public void setCurrentStatus(String currentStatus) {
 		this.currentStatus = currentStatus;
+	}
+
+	public String getPurchaseDate() {
+		return purchaseDate;
+	}
+
+	public void setPurchaseDate(String purchaseDate) {
+		this.purchaseDate = purchaseDate;
+	}
+
+	public String getSoldDate() {
+		return SoldDate;
+	}
+
+	public void setSoldDate(String soldDate) {
+		SoldDate = soldDate;
 	}
     
     
