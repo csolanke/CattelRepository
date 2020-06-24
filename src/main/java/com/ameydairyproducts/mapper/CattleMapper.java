@@ -7,7 +7,7 @@ import com.ameydairyproducts.dto.CattleDTO;
 
 @Component
 public class CattleMapper {
-	
+
 	public Cattle cattleDTOtoEntity(CattleDTO dto) {
 		Cattle cattle = new Cattle();
 
@@ -19,13 +19,13 @@ public class CattleMapper {
 			cattle.setNumOfKids(dto.getNumOfKids());
 			cattle.setPricePurchased(dto.getPricePurchased());
 			cattle.setUniqueIdentity(dto.getUniqueIdentity());
+			cattle.setSellingPrice(dto.getSellingPrice());
+			cattle.setCurrentStatus(dto.getCurrentStatus());
 		}
 
 		return cattle;
 	}
-	
-	
-	
+
 	public CattleDTO cattlEntityToDto(Cattle cattle) {
 		CattleDTO cattleDTO = new CattleDTO();
 
@@ -37,10 +37,11 @@ public class CattleMapper {
 			cattleDTO.setNumOfKids(cattle.getNumOfKids());
 			cattleDTO.setPricePurchased(cattle.getPricePurchased());
 			cattleDTO.setUniqueIdentity(cattle.getUniqueIdentity());
+			cattleDTO.setCurrentStatus(cattle.getCurrentStatus());
+			cattleDTO.setSellingPrice(cattle.getSellingPrice());
 		}
 
 		return cattleDTO;
 	}
-	
 
 }

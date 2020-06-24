@@ -10,7 +10,9 @@ public class CattleDTO {
 	private int numOfKids;
 	private String uniqueIdentity;
 	private double milkingCapacity;
-	
+	private double sellingPrice;
+    private String currentStatus;
+
 
 	public int getId() {
 		return id;
@@ -75,5 +77,23 @@ public class CattleDTO {
 	public void setMilkingCapacity(double milkingCapacity) {
 		this.milkingCapacity = milkingCapacity;
 	}
+
+	public double getSellingPrice() {
+		return sellingPrice;
+	}
+
+	public void setSellingPrice(double sellingPrice) {
+		this.sellingPrice = sellingPrice;
+	}
+
+	public String getCurrentStatus() {
+		return currentStatus;
+	}
+
+	public void setCurrentStatus(String currentStatus) {
+		this.currentStatus = currentStatus;
+	}
+	
+	
 
 }

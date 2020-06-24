@@ -1,11 +1,14 @@
 package com.ameydairyproducts.domain;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
 public class Cattle {
     @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
     private int id;
     private String cattleName;
     private String marketPurchased;
@@ -14,12 +17,15 @@ public class Cattle {
     private int numOfKids;
     private String uniqueIdentity;
     private double milkingCapacity;
+    private double sellingPrice;
+    private String currentStatus;
 
 
     public Cattle() {
     }
 
-    public Cattle(int id, String cattleName, String marketPurchased, String breed, double pricePurchased, int numOfKids, String uniqueIdentity, double milkingCapacity) {
+    public Cattle(int id, String cattleName, String marketPurchased, String breed, double pricePurchased, int numOfKids, String uniqueIdentity, double milkingCapacity,
+    		double sellingPrice,String currentStatus) {
         this.id = id;
         this.cattleName = cattleName;
         this.marketPurchased = marketPurchased;
@@ -28,6 +34,8 @@ public class Cattle {
         this.numOfKids = numOfKids;
         this.uniqueIdentity = uniqueIdentity;
         this.milkingCapacity = milkingCapacity;
+        this.sellingPrice=sellingPrice;
+        this.currentStatus=currentStatus;
     }
 
 	public int getId() {
@@ -92,6 +100,22 @@ public class Cattle {
 
 	public void setMilkingCapacity(double milkingCapacity) {
 		this.milkingCapacity = milkingCapacity;
+	}
+
+	public double getSellingPrice() {
+		return sellingPrice;
+	}
+
+	public void setSellingPrice(double sellingPrice) {
+		this.sellingPrice = sellingPrice;
+	}
+
+	public String getCurrentStatus() {
+		return currentStatus;
+	}
+
+	public void setCurrentStatus(String currentStatus) {
+		this.currentStatus = currentStatus;
 	}
     
     
